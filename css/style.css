@@ -1,0 +1,36 @@
+:root {
+  /* --primary-color:; */
+  --dark-color: #333;
+  --light-color: #fff;
+  --max-width: 1130px;
+}
+/* Core css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'PT Serif', serif;
+  /* background: ; */
+  line-height: 1.4;
+}
+
+a {
+ color: var(--dark-color);
+}
+
+img {
+  width: 100%;
+}
+
+/* Utilites */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
