@@ -29,8 +29,56 @@ img {
 
 /* Utilites */
 .container {
-  max-width: var(--max-width);
+  /* max-width: var(--max-width); */
   margin: auto;
   overflow: hidden;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
+}
+
+ .icon {
+   background: #C5F4E0;
+   color: #03fcad;
+   width: 45px;
+   height: 45px;
+   text-align: center;
+    font-size: 24px;
+   line-height: 45px;
+   display: inline-block;
+   border-radius: 50%;
+   margin: 0 1rem;
+ }
+
+/* Header */
+.uppper_header {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* margin: 0 1rem; */
+}
+.logo {
+  padding: 0 4rem;
+}
+.logo a:hover {
+  transition: all 0.3s ease-in-out;
+  color: #C5F4E0;
+}
+
+.busi-hrs p,
+.busi-address p {
+  margin-bottom: .5rem;
+}
+
+.lower-header {
+  background: #C5F4E0;
+  /* display: flex; */
+}
+
+.navbar ul li{
+  display: ;
+
+  /* grid-template-columns: repeat(3, 1fr); */
+  
 }
