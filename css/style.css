@@ -2,7 +2,8 @@
   /* --primary-color:; */
   --dark-color: #333;
   --light-color: #fff;
-  --max-width: 1130px;
+  --max-width: 1200px;
+  --transition-speed: 0.4s;
 }
 /* Core css */
 * {
@@ -29,15 +30,15 @@ img {
 
 /* Utilites */
 .container {
-  /* max-width: var(--max-width); */
-  margin: auto;
+  max-width: var(--max-width);
+  margin: 0 auto;
   overflow: hidden;
-  /* padding: 0 2rem; */
+  padding: 0 2rem;
 }
 
  .icon {
    background: #C5F4E0;
-   color: #03fcad;
+   color: #02b00a;
    width: 45px;
    height: 45px;
    text-align: center;
@@ -45,40 +46,55 @@ img {
    line-height: 45px;
    display: inline-block;
    border-radius: 50%;
-   margin: 0 1rem;
+   margin-left: 4rem;
+ }
+
+ .icon i:hover {
+   transition: all var(--transition-speed) ease-in-out;
+   transform: rotate(340deg);
  }
 
 /* Header */
 .uppper_header {
   display: flex;
-  padding: 1rem 0;
-  justify-content: center;
-  align-items: center;
+  padding: 1rem;
   width: 100%;
-  height: 100%;
-  /* margin: 0 1rem; */
-}
-.logo {
-  padding: 0 4rem;
-}
-.logo a:hover {
-  transition: all 0.3s ease-in-out;
-  color: #C5F4E0;
+  height: 100%; 
+  justify-content:space-evenly;
+  font-size: 1.1rem;
 }
 
-.busi-hrs p,
-.busi-address p {
-  margin-bottom: .5rem;
+.uppper_header p {
+  color: #828282;
+}
+
+.busi-hrs h5,
+.busi-address h5,
+.busi-phone h5 {
+  margin-top: .5rem;
+  font-weight: bolder;
 }
 
 .lower-header {
   background: #C5F4E0;
-  /* display: flex; */
+
 }
 
-.navbar ul li{
-  display: ;
+.headers .navbar ul {
+  display: flex;
+  padding: 1.5rem;
+}
 
-  /* grid-template-columns: repeat(3, 1fr); */
-  
+.headers .navbar ul li a {
+  padding: 1rem;
+  font-weight: bolder;
+  font-size: 1rem;
+  text-align: center;
+  margin-left: 5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.headers .navbar ul li a:hover {
+  color: #02b00a;
+  border-bottom: #02b00a 1px solid;
 }
